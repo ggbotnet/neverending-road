@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://degk8s0fhiu78"]
+
+[ext_resource type="Texture2D" uid="uid://dvb071qnwydxs" path="res://graphics/ufo.png" id="1"]
+[ext_resource type="Script" path="res://scripts/UFO.gd" id="2"]
+
+[node name="UFO" type="Node2D"]
+z_index = 16
+position = Vector2(0, -11)
+script = ExtResource("2")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+z_index = 16
+texture = ExtResource("1")

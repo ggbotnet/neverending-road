@@ -1,0 +1,159 @@
+[gd_scene load_steps=9 format=3 uid="uid://b53ellqast7vd"]
+
+[ext_resource type="Script" path="res://scripts/Game.gd" id="1"]
+[ext_resource type="Texture2D" uid="uid://0c84tw56gepa" path="res://graphics/game.png" id="2"]
+[ext_resource type="PackedScene" uid="uid://bfriy2jdlme6s" path="res://scenes/Player.tscn" id="3"]
+[ext_resource type="Texture2D" uid="uid://dka7xoxciqu3l" path="res://graphics/road.png" id="4"]
+[ext_resource type="Texture2D" uid="uid://bcb5jf8m4ewas" path="res://graphics/uibar.png" id="6"]
+[ext_resource type="FontFile" uid="uid://1qblbv7x43xs" path="res://graphics/PublicPixel.ttf" id="6_e5qc0"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_xhy47"]
+bg_color = Color(0.6, 0.411765, 0.176471, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_gjy8m"]
+bg_color = Color(0.835294, 0.87451, 0.486275, 1)
+
+[node name="Game" type="Node2D"]
+script = ExtResource("1")
+
+[node name="bg" type="CanvasLayer" parent="."]
+layer = -1
+
+[node name="Control" type="Control" parent="bg"]
+custom_minimum_size = Vector2(320, 240)
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = 320.0
+offset_bottom = 240.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TextureRect" type="TextureRect" parent="bg/Control"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("2")
+
+[node name="Road1" type="Sprite2D" parent="."]
+position = Vector2(129, -60)
+texture = ExtResource("4")
+
+[node name="Road5" type="Sprite2D" parent="."]
+position = Vector2(129, -20)
+texture = ExtResource("4")
+
+[node name="Road6" type="Sprite2D" parent="."]
+position = Vector2(129, 20)
+texture = ExtResource("4")
+
+[node name="Road2" type="Sprite2D" parent="."]
+position = Vector2(129, 60)
+texture = ExtResource("4")
+
+[node name="Road7" type="Sprite2D" parent="."]
+position = Vector2(129, 100)
+texture = ExtResource("4")
+
+[node name="Road8" type="Sprite2D" parent="."]
+position = Vector2(129, 140)
+texture = ExtResource("4")
+
+[node name="Road3" type="Sprite2D" parent="."]
+position = Vector2(129, 180)
+texture = ExtResource("4")
+
+[node name="Road4" type="Sprite2D" parent="."]
+position = Vector2(129, 300)
+texture = ExtResource("4")
+
+[node name="Road9" type="Sprite2D" parent="."]
+position = Vector2(129, 260)
+texture = ExtResource("4")
+
+[node name="Road10" type="Sprite2D" parent="."]
+position = Vector2(129, 220)
+texture = ExtResource("4")
+
+[node name="Player" parent="." instance=ExtResource("3")]
+
+[node name="TimerScore" type="Timer" parent="."]
+
+[node name="TimerFuel" type="Timer" parent="."]
+
+[node name="TimerSFuel" type="Timer" parent="."]
+wait_time = 3.0
+
+[node name="TimerCars" type="Timer" parent="."]
+
+[node name="TimerTreeLeft" type="Timer" parent="."]
+
+[node name="TimerTreeRight" type="Timer" parent="."]
+
+[node name="TimerFruits" type="Timer" parent="."]
+
+[node name="TimerEGG" type="Timer" parent="."]
+one_shot = true
+
+[node name="GUI" type="CanvasLayer" parent="."]
+
+[node name="C" type="Control" parent="GUI"]
+custom_minimum_size = Vector2(320, 240)
+layout_mode = 3
+anchors_preset = 0
+offset_right = 320.0
+offset_bottom = 240.0
+
+[node name="sidebar" type="TextureRect" parent="GUI/C"]
+layout_mode = 0
+offset_right = 320.0
+offset_bottom = 240.0
+texture = ExtResource("6")
+
+[node name="HiScore" type="Label" parent="GUI/C"]
+layout_mode = 0
+offset_left = 267.0
+offset_top = 19.0
+offset_right = 307.0
+offset_bottom = 33.0
+theme_override_colors/font_color = Color(0.384314, 0.384314, 0.384314, 1)
+theme_override_fonts/font = ExtResource("6_e5qc0")
+theme_override_font_sizes/font_size = 8
+text = "0"
+horizontal_alignment = 2
+
+[node name="Score" type="Label" parent="GUI/C"]
+layout_mode = 0
+offset_left = 267.0
+offset_top = 50.0
+offset_right = 307.0
+offset_bottom = 64.0
+theme_override_fonts/font = ExtResource("6_e5qc0")
+theme_override_font_sizes/font_size = 8
+text = "0"
+horizontal_alignment = 2
+
+[node name="FuelBar" type="ProgressBar" parent="GUI/C"]
+custom_minimum_size = Vector2(40, 7)
+layout_mode = 0
+offset_left = 267.0
+offset_top = 81.0
+offset_right = 307.0
+offset_bottom = 88.0
+theme_override_colors/font_color = Color(0, 0, 0, 0)
+theme_override_fonts/font = ExtResource("6_e5qc0")
+theme_override_font_sizes/font_size = 1
+theme_override_styles/background = SubResource("StyleBoxFlat_xhy47")
+theme_override_styles/fill = SubResource("StyleBoxFlat_gjy8m")
+max_value = 60.0
+step = 1.0
+
+[connection signal="timeout" from="TimerScore" to="." method="_on_TimerScore_timeout"]
+[connection signal="timeout" from="TimerFuel" to="." method="_on_TimerFuel_timeout"]
+[connection signal="timeout" from="TimerSFuel" to="." method="_on_TimerSFuel_timeout"]
+[connection signal="timeout" from="TimerCars" to="." method="_on_TimerCars_timeout"]
+[connection signal="timeout" from="TimerTreeLeft" to="." method="_on_TimerTreeLeft_timeout"]
+[connection signal="timeout" from="TimerTreeRight" to="." method="_on_TimerTreeRight_timeout"]
+[connection signal="timeout" from="TimerFruits" to="." method="_on_TimerFruits_timeout"]
+[connection signal="timeout" from="TimerEGG" to="." method="_on_TimerEGG_timeout"]
