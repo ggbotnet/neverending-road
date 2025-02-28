@@ -1,7 +1,11 @@
-# NeverEnding Road Game
+# NeverEnding Road
 
-## Overview
-NeverEnding Road is a top-down 2D endless driving game where the player must navigate an endless landscape, skillfully avoiding collisions with other vehicles and collecting fruits along the way.
+This is an open-source game project that features a top-down 2D endless driving game, which will incorporate multiple game engine templates. In terms of gameplay, the player drives a sports car across an endless landscape, skillfully avoiding other vehicles and collecting fruits as they go.
 
-### Screenshots
 ![Screenshot](Screenshots.png)
+
+### Godot Engine 3
+Language: GDScript. Renderer: GLES2.
+
+### Godot Engine 4
+Language: GDScript. Renderer: Compatibility.
