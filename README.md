@@ -13,7 +13,7 @@ In this game, players will:
 ## Game Engines
 
 ### Godot Engine 3 / 4
-![Screenshot](Screenshots.png)
+![Screenshot](_Screenshots/GodotEngine.png)
 
 - **Language:** GDScript
 - **Renderer:**
@@ -21,6 +21,6 @@ In this game, players will:
   - Godot 4: Compatibility
 
 ### MakeCode Arcade
-![Screenshot](Screenshots.png)
+![Screenshot](_Screenshots/MakeCodeArcade.png)
 
 To import the game into MakeCode Arcade, drag the `arcade-NeverEnding-Road.png` file into [arcade.makecode.com](https://arcade.makecode.com) to reload it.
