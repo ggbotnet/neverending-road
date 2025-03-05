@@ -11,7 +11,7 @@ const mute_action: String = "keyboard_mute"
 var is_mute: bool = false
 
 func _ready():
-	#Engine.set_target_fps(60)
+	Engine.set_target_fps(60)
 	music.play()
 	load_score()
 
