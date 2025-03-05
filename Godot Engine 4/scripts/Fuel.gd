@@ -7,7 +7,7 @@ func _ready():
 	pos_new = pos[randi() % pos.size()]
 	position.x = pos_new
 
-func _process(_delta: float) -> void:
+func _physics_process(_delta: float) -> void:
 	if not Global.gameover:
 		position.y += Global.speed_ground
 		if position.y > get_viewport_rect().size.y:
