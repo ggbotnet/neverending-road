@@ -12,7 +12,7 @@ func _ready():
 	hiscore.text = "HI-SCORE " +str(Global.high_score)
 
 func _physics_process(_delta):
-	var textcolor = Color("626262")
+	var textcolor = Color("555555")
 	var textcolorsel = Color("FFFFFF")
 	if select.value == 1:
 		ui_newgame.set("custom_colors/font_color",textcolorsel)
