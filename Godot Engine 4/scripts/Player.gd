@@ -5,7 +5,6 @@ const max_left: int = 80
 const max_right: int = 146
 var car = preload("res://graphics/player.png")
 var cardmg = preload("res://graphics/player_dmg.png")
-@onready var root = $"."
 @onready var sprite = $Sprite2D
 @onready var timer = $Timer
 @onready var effect_hit = $effect_hit

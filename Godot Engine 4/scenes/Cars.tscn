@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://r7q6jr2u0cku"]
 
 [ext_resource type="Texture2D" uid="uid://cfsya5p68vl7c" path="res://graphics/car_up.png" id="1"]
-[ext_resource type="Script" path="res://scripts/Cars.gd" id="2"]
+[ext_resource type="Script" uid="uid://fl51tlih103u" path="res://scripts/Cars.gd" id="2"]
 
 [sub_resource type="RectangleShape2D" id="1"]
 size = Vector2(14, 20)

@@ -1,6 +1,6 @@
 [gd_scene load_steps=9 format=3 uid="uid://b53ellqast7vd"]
 
-[ext_resource type="Script" path="res://scripts/Game.gd" id="1"]
+[ext_resource type="Script" uid="uid://b8whmowcc5xq3" path="res://scripts/Game.gd" id="1"]
 [ext_resource type="Texture2D" uid="uid://0c84tw56gepa" path="res://graphics/game.png" id="2"]
 [ext_resource type="PackedScene" uid="uid://bfriy2jdlme6s" path="res://scenes/Player.tscn" id="3"]
 [ext_resource type="Texture2D" uid="uid://dka7xoxciqu3l" path="res://graphics/road.png" id="4"]
@@ -8,10 +8,10 @@
 [ext_resource type="FontFile" uid="uid://1qblbv7x43xs" path="res://graphics/PublicPixel.ttf" id="6_e5qc0"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_xhy47"]
-bg_color = Color(0.6, 0.411765, 0.176471, 1)
+bg_color = Color(0.666667, 0.333333, 0, 1)
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_gjy8m"]
-bg_color = Color(0.835294, 0.87451, 0.486275, 1)
+bg_color = Color(1, 1, 0.333333, 1)
 
 [node name="Game" type="Node2D"]
 script = ExtResource("1")
@@ -117,7 +117,7 @@ offset_left = 267.0
 offset_top = 19.0
 offset_right = 307.0
 offset_bottom = 33.0
-theme_override_colors/font_color = Color(0.384314, 0.384314, 0.384314, 1)
+theme_override_colors/font_color = Color(0.333333, 0.333333, 0.333333, 1)
 theme_override_fonts/font = ExtResource("6_e5qc0")
 theme_override_font_sizes/font_size = 8
 text = "0"

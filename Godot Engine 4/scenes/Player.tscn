@@ -1,7 +1,7 @@
 [gd_scene load_steps=11 format=3 uid="uid://bfriy2jdlme6s"]
 
 [ext_resource type="Texture2D" uid="uid://cm4vpfbayosea" path="res://graphics/player.png" id="1"]
-[ext_resource type="Script" path="res://scripts/Player.gd" id="2"]
+[ext_resource type="Script" uid="uid://3avsswg856k2" path="res://scripts/Player.gd" id="2"]
 [ext_resource type="Texture2D" uid="uid://bubs2t6e3ffy0" path="res://graphics/effect_hit.png" id="3"]
 [ext_resource type="AudioStream" uid="uid://crgpjtni6dutj" path="res://audio/pickup.ogg" id="4"]
 [ext_resource type="FontFile" uid="uid://1qblbv7x43xs" path="res://graphics/PublicPixel.ttf" id="4_d4ibd"]
@@ -70,8 +70,8 @@ tracks/1/keys = {
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_l28mk"]
 _data = {
-"RESET": SubResource("2"),
-"hit": SubResource("3")
+&"RESET": SubResource("2"),
+&"hit": SubResource("3")
 }
 
 [node name="Player" type="CharacterBody2D" groups=["Player"]]
@@ -98,7 +98,7 @@ vframes = 2
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 libraries = {
-"": SubResource("AnimationLibrary_l28mk")
+&"": SubResource("AnimationLibrary_l28mk")
 }
 
 [node name="pickuptext" type="Label" parent="."]

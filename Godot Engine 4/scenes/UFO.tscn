@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://degk8s0fhiu78"]
 
 [ext_resource type="Texture2D" uid="uid://dvb071qnwydxs" path="res://graphics/ufo.png" id="1"]
-[ext_resource type="Script" path="res://scripts/UFO.gd" id="2"]
+[ext_resource type="Script" uid="uid://dgvqktgsqao8e" path="res://scripts/UFO.gd" id="2"]
 
 [node name="UFO" type="Node2D"]
 z_index = 16

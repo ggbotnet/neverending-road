@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://b44bw0cyg5xof"]
 
-[ext_resource type="Script" path="res://scripts/GameOver.gd" id="1"]
+[ext_resource type="Script" uid="uid://dnvw8ag3px06b" path="res://scripts/GameOver.gd" id="1"]
 [ext_resource type="FontFile" uid="uid://1qblbv7x43xs" path="res://graphics/PublicPixel.ttf" id="2_v40pr"]
 
 [node name="GameOver" type="Node2D"]
@@ -59,14 +59,14 @@ color = Color(0, 0, 0, 1)
 
 [node name="HI" type="Label" parent="C/VBoxC"]
 layout_mode = 2
-theme_override_colors/font_color = Color(0.360784, 0.670588, 0.368627, 1)
+theme_override_colors/font_color = Color(0.333333, 1, 0.333333, 1)
 theme_override_fonts/font = ExtResource("2_v40pr")
 theme_override_font_sizes/font_size = 16
 text = "HI 0"
 
 [node name="SCORE" type="Label" parent="C/VBoxC"]
 layout_mode = 2
-theme_override_colors/font_color = Color(0.360784, 0.670588, 0.368627, 1)
+theme_override_colors/font_color = Color(0.333333, 1, 0.333333, 1)
 theme_override_fonts/font = ExtResource("2_v40pr")
 theme_override_font_sizes/font_size = 16
 text = "SCORE 0"

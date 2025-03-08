@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://cl14rffduto8r"]
 
-[ext_resource type="Script" path="res://scripts/MainMenu.gd" id="1"]
+[ext_resource type="Script" uid="uid://cyt1dxq3t00ix" path="res://scripts/MainMenu.gd" id="1"]
 [ext_resource type="Texture2D" uid="uid://cdcs3oroymta3" path="res://graphics/mainmenu.png" id="2"]
 [ext_resource type="FontFile" uid="uid://1qblbv7x43xs" path="res://graphics/PublicPixel.ttf" id="3_bcpeu"]
 
@@ -73,7 +73,7 @@ color = Color(0, 0, 0, 1)
 
 [node name="HiScore" type="Label" parent="Control/VBoxC"]
 layout_mode = 2
-theme_override_colors/font_color = Color(0.360784, 0.670588, 0.368627, 1)
+theme_override_colors/font_color = Color(0.333333, 1, 0.333333, 1)
 theme_override_fonts/font = ExtResource("3_bcpeu")
 theme_override_font_sizes/font_size = 8
 text = "HI-SCORE 0"
