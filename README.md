@@ -4,18 +4,18 @@ Welcome to **NeverEnding Road**, an open-source game project featuring a top-dow
 ## Gameplay
 In this game, players will:
 - Drive a sports car through an endless landscape.
-- Avoid other vehicles.
+- Avoid collisions with other vehicles.
 - Collect fuel to keep the car running.
-- Collect fruits to enhance their score.
+- Gather fruits to increase your score.
 
 ## Game Engines
 
-### Godot Engine 3 / 4
+### Godot Engine
 ![Screenshot](_Screenshots/GodotEngine.png)
-- **Language:** GDScript
-- **Renderer:**
-  - Godot 3: GLES2
-  - Godot 4: Compatibility
+- **Supported Versions:**
+  - Godot 2.1.6
+  - Godot 3.6
+  - Godot 4.4
 
 ### MakeCode Arcade
 ![Screenshot](_Screenshots/MakeCodeArcade.png)
